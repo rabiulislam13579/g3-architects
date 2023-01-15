@@ -230,7 +230,24 @@
     margin-right: 125px;
    display: flex;
    justify-content: space-evenly;
-    
+}
+@keyframes identifier {
+    0%{
+        background-color: #FF900E;
+        transform: translateY(-20px);
+    }
+    50%{
+        background-color: purple;
+        transform: translateY(20px);
+    }
+    100%{
+        background-color: cyan;
+        transform: translateY(-20px);
+    }
+}
+
+.box-container:hover{
+    animation: identifier 3s ease-in 0s infinite alternate;
 }
 .box-container{
     width: 180px;
@@ -415,6 +432,9 @@
     }
     .both{
         flex-direction: column;
+    }
+    .architect-type-example{
+        width: 90%;
     }
     .architect-img img{
         width: 100%;
